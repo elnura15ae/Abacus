@@ -3,17 +3,16 @@ import {Link} from 'react-router-dom'
 
 export default function NavigationBar() {
     return (
-        <div>
-           <nav>
-          <ul>
-            <li>
-             <Link to="/">Home</Link> 
-              </li>
-            <li>
-              <Link to="/methode">Methode</Link>
-            </li>
-          </ul>
-        </nav> 
-        </div>
+    <nav className="navbar">
+      <h1>Mental Math</h1>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/methode" style={{ 
+          color: 'white', 
+          backgroundColor: '#f1356d',
+          borderRadius: '8px' 
+        }}>Methode</Link>
+      </div>
+    </nav>
     )
 }

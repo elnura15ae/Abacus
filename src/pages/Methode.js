@@ -10,14 +10,13 @@ export default function Methode({data}) {
     const fetchSingle= async (id) =>{
         let res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         let data= await res.json();
-        //console.log(data)
+        console.log(data)
         setState({
             post:data
         })
     }
     return (
-        <div>
-            <h1>Methode Page</h1>
+        <div className="methode">
             {
                 data.map((item, i)=>{
                     return(
