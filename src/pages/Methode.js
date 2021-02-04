@@ -20,7 +20,7 @@ export default function Methode({data}) {
             {
                 data.map((item, i)=>{
                     return(
-                        <Link onClick={()=>fetchSingle(item.id)} key={i} to={`/methode/${item.id}`} style={{'display':'block'}}>{item.title}</Link>
+                        <Link onClick={()=>fetchSingle(item.id)} key={i} to={`/methode/${item.id}`} style={{'display':'block'}}><br/>{item.title}</Link>
                     )
                 })
             }
