@@ -1,12 +1,18 @@
-import React from 'react'
-import SorobanGenerator from 'generate-soroban-training2'
+import React, { Component } from 'react'
+import {Route} from 'react-router-dom'
+import SorobanGenerator from '../abacusRules/index'
 
-export default function Training() {
-    return (
-        <div className='training-container'>
 
-            Training page!
-        </div>
-    )
+export default class Training extends Component {
+    
+    render() {
+
+        return (
+            <div>
+                Train!!!
+            </div>
+        )
+    }
 }
+
 

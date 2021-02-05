@@ -1,6 +1,7 @@
 import Simple from './Simple'
 import { ArraySum } from './helpers';
 
+
 export default class {
     constructor (config) {
         this.config = config;

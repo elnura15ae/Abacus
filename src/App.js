@@ -9,11 +9,7 @@ import{
 import NavigationBar from './components/NavigationBar'
 import Home from './pages/Home'
 import Methode from './pages/Methode'
-import SorobanGenerator from "./abacusRules/SorobanGenerator"
 import Training from './pages/Training';
-
-
-
 
 export default class App extends Component {
   render() {
@@ -32,16 +28,31 @@ export default class App extends Component {
       }
     ]
 
+    const myLocalDB2=[
+      {
+        id:1,
+        title:"5"
+      },
+      {
+        id:2,
+        title:"10"
+      },
+      {
+        id:3,
+        title:"without"
+      }
+    ]
+
     return (
       <Router>
         <div>
           <NavigationBar />        
         </div>
-        <div>
-         <SorobanGenerator path='/training' component={Training} />
-        </div>
+        <Switch>
         <Route exact path="/" component={Home} />
         <Route path='/methode' render={()=><Methode data={myLocalDB}/>} />
+        <Router path="/training" render={()=><Training data={myLocalDB2}/>} />
+        </Switch>
       </Router>
       
     )

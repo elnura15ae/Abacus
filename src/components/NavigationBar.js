@@ -12,6 +12,11 @@ export default function NavigationBar() {
           backgroundColor: '#f1356d',
           borderRadius: '8px' 
         }}>Methode</Link>
+        <Link to="/training" style={{ 
+          color: 'white', 
+          backgroundColor: '#f1356d',
+          borderRadius: '8px' 
+        }}>Mental Training</Link>
       </div>
     </nav>
     )
