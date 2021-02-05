@@ -10,6 +10,7 @@ import NavigationBar from './components/NavigationBar'
 import Home from './pages/Home'
 import Methode from './pages/Methode'
 import SorobanGenerator from "./abacusRules/SorobanGenerator"
+import Training from './pages/Training';
 
 
 
@@ -37,7 +38,7 @@ export default class App extends Component {
           <NavigationBar />        
         </div>
         <div>
-         <SorobanGenerator />
+         <SorobanGenerator path='/training' component={Training} />
         </div>
         <Route exact path="/" component={Home} />
         <Route path='/methode' render={()=><Methode data={myLocalDB}/>} />
